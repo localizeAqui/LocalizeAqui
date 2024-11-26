@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Item</title>
+    <link rel="icon" href="../images/vetor.png">
+    <link rel="stylesheet" href="../style/cadastro.css">
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html"><img src="../images/logo.png" alt="logo"></a>
+
+        <div class="form-container">
+            <form id="itemForm">
+                <input type="text" id="dono" placeholder="Propietário(a)" required>
+                <input type="text" id="item" placeholder="Nome do item" required>
+                <input type="text" id="description" placeholder="Descrição do item" required>
+                <input type="text" id="location" placeholder="Local" required>
+                <select id="status">
+                    <option value="Achado">Achado</option>
+                    <option value="Perdido">Perdido</option>
+                </select>
+                <button type="submit">Adicionar Item</button>
+            </form>
+            <p>Itens Registrados:</p>
+            <select id="filterStatus" onchange="filterItems()">
+                <option value="">Todos</option>
+                <option value="Achado">Achado</option>
+                <option value="Perdido">Perdido</option>
+            </select>
+            <div class="list-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Propietário(a)</th>
+                            <th>Item</th>
+                            <th>Descrição</th>
+                            <th>Local</th>
+                            <th>Status</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="itemList"></tbody>
+                </table>
+            </div>
+        </div>
+        </div>
+
+
+    <script src="../js/cadastro.js"></script>
+</body>
+</html>

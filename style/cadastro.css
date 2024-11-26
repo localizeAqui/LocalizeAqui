@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+/* CSS Variables */
+:root {
+    --font-family: 'Poppins', sans-serif;
+    --color-primary: orangered;
+    --color-secondary: #282424;
+    --color-text: #1d1d1d;
+    --color-text-light: #424242;
+    --color-background: white;
+    --color-white: #ffffff;
+    --transition-duration: 0.3s;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: var(--color-text-light);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 650px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+h3 {
+    margin-top: 24px;
+    color: #ffffff;
+}
+
+.form-container {
+    margin-bottom: 20px;
+}
+
+input, select, button {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--color-white);
+    color: var(--color-text);
+}
+
+.list-container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% - 20px);
+    align-items: center;
+    margin-left: 10px;
+
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: var(--color-primary);
+    color: white;
+    align-items: center  ;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+td button {
+    background-color: #e74c3c;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+td button:hover {
+    background-color: #c0392b;
+}
+
+.container img {
+    width: 200px;
+    margin: 32px;
+}
+
+.alert {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px;
+    color: white;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.alert.success {
+    background-color: #4CAF50;
+}
+
+.alert.danger {
+    background-color: #e74c3c;
+}
+
+p {
+    font-size: small;
+    color: white;
+}

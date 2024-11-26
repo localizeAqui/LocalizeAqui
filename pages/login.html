@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="icon" href="../images/vetor.png">
+    <title>Login</title>
+</head>
+<body>
+    <div id="container">
+        <div id="texto">
+            <a href="../index.html"><img class="logo" src="../images/logo.png" alt=""></a>
+            <h1 class="title">Bem-vindo!</h1>
+            <p class="description">
+                Estamos felizes em tê-lo(a). <br>
+                Insira suas credenciais para acessar <br>
+                sua conta.
+            </p>
+        </div>
+        <div id="card">
+            <h2>Login</h2>
+            <form id="loginForm" onsubmit="login(event)">
+                <label for="username">Nome de usuário</label>
+                <input type="text" id="username" placeholder="Digite seu nome de usuário" oninput="checkInputs()" required>
+                
+                <label for="password">Senha</label>
+                <div id="password-container">
+                    <input type="password" id="password" placeholder="Digite sua senha" oninput="checkInputs()" required>
+                    <i id="eye" class="fa-solid fa-eye"></i> 
+                </div>
+                
+                <button type="submit" id="submit">Entrar</button> 
+                <i id="vassoura" class="fa-solid fa-broom"><input type="reset" id="limpar" value="Limpar"></i>  
+            </form>
+        </div>
+    </div>
+
+
+<div id="top-modal" class="top-modal">
+    <span id="modal-icon"></span>
+    <p id="modal-message"></p>
+</div>
+
+
+
+    <script src="../js/login.js"></script>
+</body>
+</html>
